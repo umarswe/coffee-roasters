@@ -1,0 +1,122 @@
+.hero {
+  padding-bottom: 120px;
+}
+
+.hero__block {
+  text-align: center;
+  padding: 100px 24px;
+  background-image: url(../img/hero-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.hero__title {
+  color: #fefcf7;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 24px;
+  transition: all 0.3s ease-in;
+}
+
+.hero__title:hover {
+  transform: skewX(-10deg);
+}
+
+.hero__description {
+  color: #fefcf7;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in;
+}
+
+.hero__description:hover {
+  transform: skewX(-10deg);
+}
+
+.hero__action {
+  color: #fefcf7;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 25px;
+
+  border-radius: 6px;
+  background: #0e8784;
+  padding: 16px 32px;
+  border: 1px solid #0e8784;
+  transition: all 0.3s ease-out;
+}
+
+.hero__action:hover {
+  border: 1px solid #0e8784;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero__block {
+    padding: 104px 58px;
+    text-align: start;
+
+    background-image: url(../img/hero-bg-tablet.jpg);
+  }
+
+  .hero__title {
+    width: 330px;
+
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+
+  .hero__description {
+    width: 400px;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .hero {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .hero__block {
+    padding: 120px 85px;
+
+    background-image: url(../img/hero-bg-desktop.png);
+  }
+
+  .hero__title {
+    width: 500px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+
+  .hero__description {
+    width: 445px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 56px;
+  }
+}

@@ -1,0 +1,164 @@
+.benefits {
+  padding-bottom: 700px;
+}
+
+.benefits__block {
+  position: relative;
+  height: 900px;
+  padding: 64px 24px;
+  border-radius: 10px;
+  background: #2c343e;
+}
+
+.benefits__content {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.benefits__title {
+  color: #fefcf7;
+  font-size: 28px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+
+  transition: all 0.3s;
+}
+
+.benefits__title:hover {
+  transform: scale(1.1);
+}
+
+.benefits__description {
+  display: none;
+  color: #fefcf7;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.benefits__box-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.benefits__box {
+  width: 280px;
+  border-radius: 8px;
+  background: #0e8784;
+  padding: 72px 33px 50px 33px;
+  text-align: center;
+
+  transition: all 0.3s;
+}
+
+.benefits__box:hover {
+  transform: translateY(-10px);
+}
+
+.benefits__box-title {
+  color: #fefcf7;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+  margin-top: 56px;
+  margin-bottom: 24px;
+}
+
+.benefits__box-description {
+  color: #fefcf7;
+  font-family: Barlow;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-bottom: 430px;
+  }
+
+  .benefits__block {
+    height: 570px;
+  }
+
+  .benefits__content {
+    width: 540px;
+  }
+
+  .benefits__description {
+    display: inline;
+  }
+
+  .benefits__title {
+    color: #fefcf7;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+
+  .benefits__box-wrapper {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    top: 50%;
+  }
+
+  .benefits__box {
+    width: 100%;
+    padding: 40px 48px 40px 70px;
+    display: flex;
+    gap: 55px;
+    text-align: start;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .benefits__box:hover {
+    transform: translateX(15px);
+  }
+
+  .benefits__box-title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .benefits {
+    padding-bottom: 350px;
+  }
+  .benefits__box-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits__content {
+    width: 540px;
+  }
+
+  .benefits__box {
+    flex-direction: column;
+    text-align: center;
+    padding: 83px 48px 48px 48px;
+  }
+
+  .benefits__box:hover {
+    transform: translateY(-10px);
+  }
+}
