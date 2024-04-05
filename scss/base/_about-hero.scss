@@ -20,6 +20,12 @@
   font-weight: 900;
   line-height: 28px;
   margin-bottom: 24px;
+  transition: all 0.3s;
+}
+
+.about-hero__title:hover,
+.about-hero__description:hover {
+  transform: skewX(-10deg);
 }
 
 .about-hero__description {
@@ -30,6 +36,7 @@
   font-weight: 400;
   line-height: 25px;
   opacity: 0.8;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 768px) {

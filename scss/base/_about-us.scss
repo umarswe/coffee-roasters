@@ -15,6 +15,16 @@
   align-items: center;
 }
 
+.about-us__mission-content,
+.about-us__quality-content {
+  transition: all 0.3s;
+}
+
+.about-us__mission-content:hover,
+.about-us__quality-content:hover {
+  transform: scale(1.1);
+}
+
 .about-us__mission::before {
   content: "";
   width: 327px;

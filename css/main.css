@@ -685,6 +685,14 @@ body {
   font-weight: 900;
   line-height: 28px;
   margin-bottom: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.about-hero__title:hover,
+.about-hero__description:hover {
+  -webkit-transform: skewX(-10deg);
+          transform: skewX(-10deg);
 }
 
 .about-hero__description {
@@ -695,6 +703,8 @@ body {
   font-weight: 400;
   line-height: 25px;
   opacity: 0.8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 768px) {
@@ -766,6 +776,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about-us__mission-content,
+.about-us__quality-content {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.about-us__mission-content:hover,
+.about-us__quality-content:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .about-us__mission::before {
@@ -966,6 +988,16 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 80px;
+}
+
+.branches__box {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.branches__box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .branches__image {

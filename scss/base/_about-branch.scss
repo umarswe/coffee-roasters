@@ -21,6 +21,14 @@
   gap: 80px;
 }
 
+.branches__box {
+  transition: all 0.3s;
+}
+
+.branches__box:hover {
+  transform: scale(1.1);
+}
+
 .branches__image {
   margin-bottom: 47px;
 }
