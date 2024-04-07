@@ -1,0 +1,166 @@
+.plan__progress {
+  // background-color: #2c343e;
+  background-color: #000;
+  border-radius: 10px;
+  padding-bottom: 0;
+}
+
+.plan__progress-box_wrapper {
+  margin-bottom: 0;
+}
+
+.plan__progress-block {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.plan__progress-box_title,
+.plan__progress-box_description {
+  // color: #fff;
+  color: hsl(0 0% 100% /0.2);
+}
+
+.scroll-reveal span {
+  color: hsl(0 0% 100% /0.2);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.785),
+    rgba(0, 0, 255, 0.781)
+  );
+
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+}
+
+.scroll-reveal h3 span {
+  animation-range-start: cover 5vh;
+  animation-range-end: cover 10vh;
+}
+
+.scroll-reveal p span {
+  animation-range-start: cover 7vh;
+  animation-range-end: cover 20vh;
+}
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .plan__progress {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .plan__progress-block {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .scroll-reveal .scroll-reveal-h2-2 span {
+    animation-range-start: cover 33vh;
+    animation-range-end: cover 38vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-2 span {
+    animation-range-start: cover 28vh;
+    animation-range-end: cover 38vh;
+  }
+
+  .scroll-reveal .scroll-reveal-h2-3 span {
+    animation-range-start: cover 50vh;
+    animation-range-end: cover 55vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-3 span {
+    animation-range-start: cover 47vh;
+    animation-range-end: cover 57vh;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .scroll-reveal .scroll-reveal-h2-2 span {
+    animation-range-start: cover 28vh;
+    animation-range-end: cover 35vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-2 span {
+    animation-range-start: cover 28vh;
+    animation-range-end: cover 38vh;
+  }
+
+  .scroll-reveal .scroll-reveal-h2-3 span {
+    animation-range-start: cover 46vh;
+    animation-range-end: cover 53vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-3 span {
+    animation-range-start: cover 47vh;
+    animation-range-end: cover 57vh;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .scroll-reveal .scroll-reveal-h2-2 span {
+    animation-range-start: cover 30vh;
+    animation-range-end: cover 37vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-2 span {
+    animation-range-start: cover 27vh;
+    animation-range-end: cover 37vh;
+  }
+
+  .scroll-reveal .scroll-reveal-h2-3 span {
+    animation-range-start: cover 48vh;
+    animation-range-end: cover 55vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-3 span {
+    animation-range-start: cover 48vh;
+    animation-range-end: cover 58vh;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .plan__progress {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .plan__progress-block {
+    padding-left: 65px;
+    padding-right: 150px;
+  }
+
+  .plan__progress-box_title {
+    padding-right: 70px;
+  }
+
+  .scroll-reveal .scroll-reveal-h2-2 span {
+    animation-range-start: cover 32vh;
+    animation-range-end: cover 39vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-2 span {
+    animation-range-start: cover 29vh;
+    animation-range-end: cover 39vh;
+  }
+
+  .scroll-reveal .scroll-reveal-h2-3 span {
+    animation-range-start: cover 51vh;
+    animation-range-end: cover 58vh;
+  }
+
+  .scroll-reveal .scroll-reveal-p-3 span {
+    animation-range-start: cover 47vh;
+    animation-range-end: cover 58vh;
+  }
+}
